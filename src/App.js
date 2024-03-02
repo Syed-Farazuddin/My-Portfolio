@@ -1,7 +1,8 @@
 import "./App.css";
+import Homepage from "./pages/Homepage";
 
 function App() {
-  return <div className="bg-black h-[100vh]">This is my portfolio</div>;
+  return <Homepage />;
 }
 
 export default App;

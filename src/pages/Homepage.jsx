@@ -4,6 +4,7 @@ import Certificates from "../components/Certificates";
 import Skills from "../components/Skills";
 import Banner from "../components/Banner";
 import Education from "../components/Education";
+import Portfolio from "../components/Portfolio";
 
 function Homepage() {
   return (
@@ -13,6 +14,7 @@ function Homepage() {
         <Banner />
         <Education />
         <Skills />
+        <Portfolio />
         <Certificates />
       </div>
     </div>

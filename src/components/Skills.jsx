@@ -1,4 +1,5 @@
 import React from "react";
+import Skill from "../assets/skills.png";
 
 function Skills() {
   return (
@@ -19,7 +20,9 @@ function Skills() {
             alt="javascript"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
           />
-          <p className="text-white mobile:text-sm sm:text-lg font-bold">Javascript</p>
+          <p className="text-white mobile:text-sm sm:text-lg font-bold">
+            Javascript
+          </p>
         </div>
         <div
           className="bg-darkblue p-4
@@ -33,7 +36,9 @@ function Skills() {
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             alt="react"
           />
-          <p className="text-white mobile:text-sm sm:text-lg font-bold">React</p>
+          <p className="text-white mobile:text-sm sm:text-lg font-bold">
+            React
+          </p>
         </div>
         <div
           className="bg-darkblue p-4
@@ -47,7 +52,9 @@ function Skills() {
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
             alt="bootstrap"
           />
-          <p className="text-white mobile:text-sm sm:text-lg font-bold">Bootstrap</p>
+          <p className="text-white mobile:text-sm sm:text-lg font-bold">
+            Bootstrap
+          </p>
         </div>
         <div
           className="bg-darkblue p-4
@@ -61,7 +68,9 @@ function Skills() {
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
             alt="redux"
           />
-          <p className="text-white mobile:text-sm sm:text-lg font-bold">Redux</p>
+          <p className="text-white mobile:text-sm sm:text-lg font-bold">
+            Redux
+          </p>
         </div>
         <div className="bg-darkblue p-2">
           <img

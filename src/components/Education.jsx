@@ -8,7 +8,7 @@ function Education() {
       <h1 className="text-5xl text-center text-zinc-100 font-extrabold font-serif mb-5 mobile:text-3xl">
         Education
       </h1>
-      <div className="flex w-full mobile:flex-col-reverse lg:flex-row">
+      <div className="flex w-full mobile:flex-col-reverse lg:flex-row justify-center items-center">
         <div className="flex items-start gap-10 justify-center sm:px-10 flex-col w-full">
           <div className="flex flex-col gap-1">
             <p className="font-sans flex justify-start items-center gap-2">

@@ -1,8 +1,8 @@
 import React from "react";
-import bannerImg from "../assets/trybanner.png";
-import profile from "../assets/profile.png";
+// import bannerImg from "../assets/trybanner.png";
+// import profile from "/profile.png";
 import skills from "../assets/skills.png";
-import test from "../assets/testme.png";
+// import test from "../assets/testme.png";
 
 function Banner() {
   return (

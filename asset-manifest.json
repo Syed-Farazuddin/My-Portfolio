@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.42e485e8.css",
-    "main.js": "/My-Portfolio/static/js/main.8f1726e8.js",
+    "main.css": "/My-Portfolio/static/css/main.c7ec6e79.css",
+    "main.js": "/My-Portfolio/static/js/main.19c808c4.js",
     "static/media/p1.png": "/My-Portfolio/static/media/p1.4b467d818dc34bfa549a.png",
     "static/media/p1-2.png": "/My-Portfolio/static/media/p1-2.55cb53829732932ecb30.png",
     "static/media/p1-4.png": "/My-Portfolio/static/media/p1-4.3a36a1c46c33cc4151a6.png",
@@ -9,13 +9,15 @@
     "static/media/edu.png": "/My-Portfolio/static/media/edu.b3766ae5503425faa569.png",
     "static/media/skills.png": "/My-Portfolio/static/media/skills.aa664c64799dda01baa3.png",
     "static/media/p2.png": "/My-Portfolio/static/media/p2.639f4310743eb522efbc.png",
+    "static/media/weatherp3.png": "/My-Portfolio/static/media/weatherp3.8ad9e6a560e5abc7ac98.png",
     "static/media/p2-1.png": "/My-Portfolio/static/media/p2-1.426fa666edded5723e7f.png",
+    "static/media/weatherp3-1.png": "/My-Portfolio/static/media/weatherp3-1.d2c0ef497634d690c2c4.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.42e485e8.css.map": "/My-Portfolio/static/css/main.42e485e8.css.map",
-    "main.8f1726e8.js.map": "/My-Portfolio/static/js/main.8f1726e8.js.map"
+    "main.c7ec6e79.css.map": "/My-Portfolio/static/css/main.c7ec6e79.css.map",
+    "main.19c808c4.js.map": "/My-Portfolio/static/js/main.19c808c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e485e8.css",
-    "static/js/main.8f1726e8.js"
+    "static/css/main.c7ec6e79.css",
+    "static/js/main.19c808c4.js"
   ]
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Skill from "../assets/skills.png";
+// import Skill from "../assets/skills.png";
 
 function Skills() {
   return (
@@ -7,7 +7,7 @@ function Skills() {
       <h1 className="text-5xl text-center text-zinc-100 font-extrabold font-serif mb-5 mobile:text-3xl">
         Skills
       </h1>
-      <div className="grid mobile:grid-cols-3 lg:grid-cols-6 md:grid-cols-4 mobile:gap-4 md:gap-8 w-full">
+      <div className="grid mobile:grid-cols-3 lg:grid-cols-6 md:grid-cols-4 mobile:gap-4 md:gap-8 w-full mt-10">
         <div className=" bg-darkblue p-4 flex items-center justify-center gap-1 flex-col">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"

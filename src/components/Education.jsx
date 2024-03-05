@@ -4,7 +4,7 @@ import { SlCalender } from "react-icons/sl";
 
 function Education() {
   return (
-    <div className="flex mobile:w-full lg:max-w-6xl flex-col bg-sdark p-10 lg:h-[100vh] font-sans">
+    <div className="flex mobile:w-full lg:max-w-6xl flex-col bg-sdark p-10 font-sans">
       <h1 className="text-5xl text-center text-zinc-100 font-extrabold font-serif mb-5 mobile:text-3xl">
         Education
       </h1>

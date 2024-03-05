@@ -16,6 +16,10 @@ module.exports = {
         customblue: "#006DA4",
         mypurple: "#BA68C8",
         mywhite: "#f0f3fa",
+        light: "#F0F3FA",
+        mlight: "#D5DEEF",
+        slight: "#B1C9EF",
+        textlight: "#395886",
       },
       fontFamily: {
         display: ["Oswald"],

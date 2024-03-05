@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/context";
 // import Skill from "../assets/skills.png";
 
 function Skills() {
+  const { darkMode } = useContext(GlobalContext);
   return (
-    <div className="flex mobile:w-full lg:max-w-6xl flex-col bg-dark p-10 lg:h-[100vh] font-sans mt-5">
-      <h1 className="text-5xl text-center text-zinc-100 font-extrabold font-serif mb-5 mobile:text-3xl">
+    <div
+      className={`flex mobile:w-full lg:max-w-6xl flex-col ${
+        darkMode ? "bg-dark " : "bg-light "
+      } p-10 lg:h-[100vh] font-sans mt-5`}
+    >
+      <h1
+        className={`${
+          darkMode ? "text-zinc-100" : "text-textlight"
+        } text-5xl text-center  font-extrabold font-serif mb-5 mobile:text-3xl`}
+      >
         Skills
       </h1>
       <div className="grid mobile:grid-cols-3 lg:grid-cols-6 md:grid-cols-4 mobile:gap-4 md:gap-8 w-full mt-10">

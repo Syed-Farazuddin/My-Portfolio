@@ -20,8 +20,8 @@ function Education() {
       </h1>
       <div className="flex w-full mobile:flex-col-reverse lg:flex-row justify-center items-center">
         <div className="flex items-start gap-10 justify-center sm:px-10 flex-col w-full">
-          <div className="flex flex-col gap-1">
-            <p className="font-sans flex justify-start items-center gap-2">
+          <div className="flex flex-col gap-1 font-mono">
+            <p className=" flex justify-start items-center gap-2">
               <SlCalender />
               2020-2024
             </p>
@@ -37,12 +37,14 @@ function Education() {
                 darkMode ? "text-zinc-300" : "text-slate-600"
               }  mobile:text-sm md:text-lg`}
             >
-              Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Repudiandae, nemo.
+              I am currently a final year student pursuing my Bachelor of
+              Engineering (B.E) degree from Lords Institute of Engineering and
+              Technology with a specialization in Computer Science and
+              Engineering (CSE).
             </p>
           </div>
-          <div className="flex flex-col gap-1 ">
-            <p className="font-sans flex justify-start items-center gap-2">
+          <div className="flex flex-col gap-1  font-mono">
+            <p className=" flex justify-start items-center gap-2">
               <SlCalender />
               2018-2020
             </p>
@@ -56,31 +58,33 @@ function Education() {
             <p
               className={`${
                 darkMode ? "text-zinc-300" : "text-slate-600"
-              }  mobile:text-sm md:text-lg`}
+              }  mobile:text-sm md:text-lg text-pretty`}
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-              voluptate dolore cupiditate illum, libero explicabo.
+              I successfully completed my intermediate education from Narayana
+              Junior College in Madinguda, specializing in Maths, Physics, and
+              Chemistry (MPC) from 2018 to 2020 and I had secured 905/1000 marks
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <p className="font-sans flex justify-start items-center gap-2">
+            <p className="flex justify-start items-center gap-2 font-mono">
               <SlCalender />
               2016-2018
             </p>
             <h1
               className={`md:text-2xl mobile:text-lg font-body font-bold ${
                 darkMode ? " text-sky-300" : "text-sdark"
-              }`}
+              } font-mono`}
             >
               Schooling - SSC
             </h1>
             <p
               className={`${
                 darkMode ? "text-zinc-300" : "text-slate-600"
-              }  mobile:text-sm md:text-lg`}
+              }  mobile:text-sm md:text-lg text-pretty font-mono`}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, necessitatibus soluta? Id, maiores minima! Cumque.
+              I completed my Secondary schooling from Geetha High School as a
+              SSC board student, from 2018 to 2020. I have successfully managed
+              to achieve 9.3/10.0 GPA
             </p>
           </div>
         </div>

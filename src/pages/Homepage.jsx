@@ -7,6 +7,7 @@ import Education from "../components/Education";
 import Portfolio from "../components/Portfolio";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { GlobalContext } from "../context/context";
+import Contact from "../components/Contact";
 
 function Homepage() {
   const { darkMode, setDarkMode } = useContext(GlobalContext);
@@ -32,7 +33,8 @@ function Homepage() {
         <Education />
         <Skills />
         <Portfolio />
-        <Certificates />
+        {/* <Certificates /> */}
+        <Contact />
       </div>
     </div>
   );

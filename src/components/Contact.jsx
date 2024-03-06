@@ -22,7 +22,7 @@ function Contact() {
             <div className="flex flex-col justify-center items-center gap-1">
               <div className="bg-light p-1 rounded-md">
                 <img
-                  className="w-10 h-10 cursor-pointer"
+                  className="md:w-10 md:h-10 mobile:w-5 mobile:h-5 cursor-pointer"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
                   alt="linkedin"
                 />
@@ -30,7 +30,7 @@ function Contact() {
               <p
                 className={`${
                   darkMode ? "text-white " : "text-sdark"
-                } font-bold text-center`}
+                } mobile:text-[10px] font-bold text-center`}
               >
                 Linkedin
               </p>
@@ -41,7 +41,7 @@ function Contact() {
             <div className="flex flex-col justify-center items-center gap-1">
               <div className="bg-light p-1 rounded-md">
                 <img
-                  className="w-10 h-10 cursor-pointer"
+                  className="md:w-10 md:h-10 mobile:w-5 mobile:h-5 cursor-pointer"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
                   alt="twitter"
                 />
@@ -50,7 +50,7 @@ function Contact() {
               <p
                 className={`${
                   darkMode ? "text-white " : "text-sdark"
-                } font-bold text-center`}
+                } mobile:text-[10px] font-bold text-center`}
               >
                 Twitter
               </p>
@@ -61,7 +61,7 @@ function Contact() {
             <div className="flex flex-col justify-center items-center gap-1">
               <div className="bg-light p-1 rounded-md">
                 <img
-                  className="w-10 h-10 cursor-pointer"
+                  className="md:w-10 md:h-10 mobile:w-5 mobile:h-5 cursor-pointer"
                   alt="github"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
                 />
@@ -69,7 +69,7 @@ function Contact() {
               <p
                 className={`${
                   darkMode ? "text-white " : "text-sdark"
-                } font-bold text-center`}
+                } font-bold text-center mobile:text-[10px]`}
               >
                 Github
               </p>

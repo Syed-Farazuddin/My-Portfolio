@@ -41,13 +41,15 @@ function Portfolio() {
           >
             <h1
               className={`${
-                darkMode ? "text-white " : "text-dark"
+                darkMode ? " text-white " : "text-dark"
               } font-bold font-serif`}
             >
               Food Recipie app
             </h1>
             <p
-              className={` p-2 rounded-full absolute left-1 cursor-pointer`}
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } p-2 rounded-full absolute left-1 cursor-pointer`}
               onClick={() => {
                 if (idx === project1.length - 1) {
                   setIdx(0);
@@ -57,7 +59,6 @@ function Portfolio() {
                 }
               }}
             >
-              {" "}
               <FaChevronLeft />
             </p>
             <a href="https://syed-farazuddin.github.io/Food-Recipies/">
@@ -69,7 +70,9 @@ function Portfolio() {
             </a>
 
             <p
-              className="text-white bg-dark p-2 rounded-full absolute right-1 cursor-pointer"
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              }  p-2 rounded-full absolute right-1 cursor-pointer`}
               onClick={() => {
                 if (idx === project1.length - 1) {
                   setIdx(0);
@@ -91,7 +94,9 @@ function Portfolio() {
               To-Do Application
             </h1>
             <p
-              className="bg-dark text-white p-2 rounded-full absolute left-1 cursor-pointer"
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              }  p-2 rounded-full absolute left-1 cursor-pointer`}
               onClick={() => {
                 console.log(idx);
                 if (idx2 === project2.length - 1) {
@@ -113,7 +118,9 @@ function Portfolio() {
             </a>
 
             <p
-              className="text-white bg-dark p-2 rounded-full absolute right-1 cursor-pointer"
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } p-2 rounded-full absolute right-1 cursor-pointer`}
               onClick={() => {
                 if (idx2 === project2.length - 1) {
                   setIdx2(0);
@@ -137,7 +144,9 @@ function Portfolio() {
               Weather Application
             </h1>
             <p
-              className="bg-dark text-white p-2 rounded-full absolute left-1 cursor-pointer"
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              }  p-2 rounded-full absolute left-1 cursor-pointer`}
               onClick={() => {
                 if (idx3 === project3.length - 1) {
                   setIdx3(0);
@@ -158,7 +167,9 @@ function Portfolio() {
             </a>
 
             <p
-              className="text-white bg-dark p-2 rounded-full absolute right-1 cursor-pointer"
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } p-2 rounded-full absolute right-1 cursor-pointer`}
               onClick={() => {
                 if (idx3 === project3.length - 1) {
                   setIdx3(0);

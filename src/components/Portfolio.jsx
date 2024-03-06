@@ -37,7 +37,7 @@ function Portfolio() {
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"
-            } flex justify-center items-center relative p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+            } mobile:p-2 flex justify-center items-center relative md:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
           >
             <h1
               className={`${
@@ -49,7 +49,7 @@ function Portfolio() {
             <p
               className={`${
                 darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } p-2 rounded-full absolute left-1 cursor-pointer`}
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
               onClick={() => {
                 if (idx === project1.length - 1) {
                   setIdx(0);
@@ -63,7 +63,7 @@ function Portfolio() {
             </p>
             <a href="https://syed-farazuddin.github.io/Food-Recipies/">
               <img
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-full  rounded-lg "
                 src={project1[idx]}
                 alt=""
               />
@@ -72,7 +72,7 @@ function Portfolio() {
             <p
               className={`${
                 darkMode ? "bg-dark text-white" : "bg-white text-black"
-              }  p-2 rounded-full absolute right-1 cursor-pointer`}
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
               onClick={() => {
                 if (idx === project1.length - 1) {
                   setIdx(0);
@@ -88,7 +88,7 @@ function Portfolio() {
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"
-            } flex justify-center items-center relative p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+            } flex justify-center items-center relative mobile:p-2 lg:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
           >
             <h1 className="text-white font-bold font-serif">
               To-Do Application
@@ -96,7 +96,7 @@ function Portfolio() {
             <p
               className={`${
                 darkMode ? "bg-dark text-white" : "bg-white text-black"
-              }  p-2 rounded-full absolute left-1 cursor-pointer`}
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
               onClick={() => {
                 console.log(idx);
                 if (idx2 === project2.length - 1) {
@@ -111,7 +111,7 @@ function Portfolio() {
             </p>
             <a href="https://syed-farazuddin.github.io/react-tasky/">
               <img
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-full rounded-lg"
                 src={project2[idx2]}
                 alt=""
               />
@@ -120,7 +120,7 @@ function Portfolio() {
             <p
               className={`${
                 darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } p-2 rounded-full absolute right-1 cursor-pointer`}
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
               onClick={() => {
                 if (idx2 === project2.length - 1) {
                   setIdx2(0);
@@ -138,7 +138,7 @@ function Portfolio() {
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"
-            } flex justify-center items-center relative p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+            } flex justify-center items-center relative mobile:p-2 lg:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
           >
             <h1 className="text-white font-bold font-serif">
               Weather Application
@@ -146,7 +146,7 @@ function Portfolio() {
             <p
               className={`${
                 darkMode ? "bg-dark text-white" : "bg-white text-black"
-              }  p-2 rounded-full absolute left-1 cursor-pointer`}
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
               onClick={() => {
                 if (idx3 === project3.length - 1) {
                   setIdx3(0);
@@ -160,7 +160,7 @@ function Portfolio() {
             </p>
             <a href="https://syed-farazuddin.github.io/MERN_WeatherApp/">
               <img
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-full  rounded-lg"
                 src={project3[idx3]}
                 alt=""
               />
@@ -169,7 +169,7 @@ function Portfolio() {
             <p
               className={`${
                 darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } p-2 rounded-full absolute right-1 cursor-pointer`}
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
               onClick={() => {
                 if (idx3 === project3.length - 1) {
                   setIdx3(0);

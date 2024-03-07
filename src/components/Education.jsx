@@ -10,6 +10,7 @@ function Education() {
       className={`${
         darkMode ? "  bg-sdark " : "bg-mlight"
       } flex mobile:w-full lg:max-w-6xl flex-col p-10 font-sans`}
+      id="Education"
     >
       <h1
         className={`${

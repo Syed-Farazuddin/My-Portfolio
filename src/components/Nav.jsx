@@ -19,19 +19,19 @@ function Nav() {
       </h1>
       <ul className=" justify-center items-center sm:gap-10 mobile:hidden sm:flex font-semibold">
         <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
-          Education
+          <a href="#Education">Education</a>
         </li>
         <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
-          Skills
+          <a href="#Skills">Skills</a>
         </li>
         <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
-          Portfolio
+          <a href="#Portfolio">Portfolio</a>
         </li>
         <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
-          Certificates
+          <a href="#Certificates">Certificates</a>
         </li>
         <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
-          Contact
+          <a href="#Contact">Contact</a>
         </li>
       </ul>
       <ul className="md:hidden cursor-pointer lmobile:text-lg">

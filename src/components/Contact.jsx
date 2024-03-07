@@ -7,6 +7,7 @@ function Contact() {
       className={`flex mobile:w-full lg:max-w-6xl flex-col ${
         darkMode ? "bg-dark " : "bg-light "
       } p-10  font-sans mt-5`}
+      id="Contact"
     >
       <h1
         className={`${

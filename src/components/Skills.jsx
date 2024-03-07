@@ -9,6 +9,7 @@ function Skills() {
       className={`flex mobile:w-full lg:max-w-6xl flex-col ${
         darkMode ? "bg-dark " : "bg-light "
       } p-10 lg:h-[100vh] font-sans mt-5`}
+      id="Skills"
     >
       <h1
         className={`${

@@ -8,7 +8,7 @@ function About() {
     <div
       className={`flex mobile:w-full lg:max-w-6xl flex-col ${
         darkMode ? "bg-dark " : "bg-light "
-      } p-10 lg:h-[100vh] font-sans mt-5 flex justify-center items-center flex-col`}
+      } mobile:p-5 md:p-10 h-[100vh] font-sans mt-5 flex justify-center items-center flex-col mb-20`}
       id="Skills"
     >
       <h1

@@ -8,7 +8,7 @@ import { GlobalContext } from "../context/context";
 function Banner() {
   const { darkMode } = useContext(GlobalContext);
   return (
-    <div className="flex h-[100vh] max-w-6xl justify-center items-center mobile:flex-col mb-10">
+    <div className="flex h-[100vh] max-w-6xl justify-center items-center mobile:flex-col mb-10 lg:flex-row">
       <div className=" w-[50%] items-center justify-center  lg:flex lg:ml-20">
         <img src={me} className=" rounded-lg" alt="" />
       </div>

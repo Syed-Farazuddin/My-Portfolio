@@ -17,7 +17,7 @@ function Nav() {
       >
         Syed Farazuddin
       </h1>
-      <ul className=" justify-center items-center sm:gap-10 mobile:hidden sm:flex font-semibold">
+      <ul className=" justify-center items-center sm:gap-5 lg:gap-10 mobile:hidden sm:flex font-semibold">
         <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
           <a href="#Education">Education</a>
         </li>

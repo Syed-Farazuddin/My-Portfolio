@@ -15,7 +15,7 @@ function Education() {
       <h1
         className={`${
           darkMode ? " text-zinc-100 " : "text-dark "
-        } text-5xl text-center font-extrabold font-serif mb-5 mobile:text-3xl`}
+        } lg:text-4xl text-center font-extrabold font-serif mb-5 mobile:text-3xl`}
       >
         Education
       </h1>

@@ -8,6 +8,7 @@ import Portfolio from "../components/Portfolio";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { GlobalContext } from "../context/context";
 import Contact from "../components/Contact";
+import About from "../components/About";
 
 function Homepage() {
   const { darkMode, setDarkMode } = useContext(GlobalContext);
@@ -30,6 +31,7 @@ function Homepage() {
           {darkMode ? <FaMoon /> : <FaSun />}
         </div>
         <Banner />
+        <About />
         <Education />
         <Skills />
         <Portfolio />

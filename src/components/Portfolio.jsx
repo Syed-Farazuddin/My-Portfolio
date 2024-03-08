@@ -43,14 +43,12 @@ function Portfolio() {
   return (
     <div
       id="Portfolio"
-      className={`${
-        darkMode ? "bg-sdark" : "bg-mlight "
-      } flex mobile:w-full lg:max-w-6xl flex-col p-10 font-sans`}
+      className={` flex mobile:w-full lg:max-w-6xl flex-col p-10 font-sans`}
     >
       <h1
         className={`${
           darkMode ? "text-zinc-100" : "text-dark "
-        } text-5xl text-center  font-extrabold font-serif mb-10 mobile:text-3xl`}
+        } lg:text-4xl text-center  font-extrabold font-serif mb-10 mobile:text-3xl`}
       >
         Portfolio
       </h1>

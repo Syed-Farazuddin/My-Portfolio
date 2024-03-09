@@ -34,6 +34,7 @@ function Homepage() {
         <About />
         <Education />
         <Skills />
+        <Certificates />
         <Portfolio />
         {/* <Certificates /> */}
         <Contact />

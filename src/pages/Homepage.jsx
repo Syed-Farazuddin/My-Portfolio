@@ -13,6 +13,7 @@ import About from "../components/About";
 function Homepage() {
   const { darkMode, setDarkMode } = useContext(GlobalContext);
   return (
+    // This is my personal porfolio which consists of somethings i hold. I will surely add more things later on in this but thats all for now
     <div
       className={`${
         darkMode ? "bg-dark text-white" : "bg-light text-textlight"

@@ -4,7 +4,7 @@ import { SlCalender } from "react-icons/sl";
 import { GlobalContext } from "../context/context";
 
 function Education() {
-  const { darkMode } = useContext(GlobalContext);
+  const { darkMode, currentColor } = useContext(GlobalContext);
   return (
     <div
       className={`${
@@ -16,6 +16,7 @@ function Education() {
         className={`${
           darkMode ? " text-zinc-100 " : "text-dark "
         } lg:text-4xl text-center font-extrabold font-serif mb-5 mobile:text-3xl`}
+        style={{ color: `${currentColor}` }}
       >
         Education
       </h1>

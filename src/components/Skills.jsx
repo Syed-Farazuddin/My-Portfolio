@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/context";
 // import Skill from "../assets/skills.png";
 
 function Skills() {
-  const { darkMode } = useContext(GlobalContext);
+  const { darkMode, currentColor } = useContext(GlobalContext);
   return (
     <div
       className={`flex mobile:w-full lg:max-w-6xl flex-col ${
@@ -15,6 +15,7 @@ function Skills() {
         className={`${
           darkMode ? "text-zinc-100" : "text-textlight"
         } lg:text-4xl text-center  font-extrabold font-serif mb-5 mobile:text-3xl`}
+        style={{ color: `${currentColor}` }}
       >
         Skills
       </h1>

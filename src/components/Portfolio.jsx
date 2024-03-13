@@ -39,7 +39,7 @@ function Portfolio() {
   const [idx3, setIdx3] = useState(0);
   const [idx4, setIdx4] = useState(0);
 
-  const { darkMode } = useContext(GlobalContext);
+  const { darkMode, currentColor } = useContext(GlobalContext);
   return (
     <div
       id="Portfolio"
@@ -49,6 +49,7 @@ function Portfolio() {
         className={`${
           darkMode ? "text-zinc-100" : "text-dark "
         } lg:text-4xl text-center  font-extrabold font-serif mb-10 mobile:text-3xl`}
+        style={{ color: `${currentColor}` }}
       >
         Portfolio
       </h1>

@@ -8,7 +8,7 @@ import Banner1 from "../assets/banner.jpg";
 import Banner2 from "../assets/banner1.jpg";
 import Banner3 from "../assets/banner3.jpg";
 function Banner() {
-  const { darkMode } = useContext(GlobalContext);
+  const { darkMode, currentColor } = useContext(GlobalContext);
   return (
     <div className="flex h-[100vh] max-w-6xl justify-center items-center mobile:flex-col mb-10 lg:flex-row">
       <div className=" w-[50%] items-center justify-center  lg:flex lg:ml-20">
@@ -25,8 +25,10 @@ function Banner() {
           </span>
           <h1 className="md:text-5xl mobile:text-xl lmobile:text-3xl">
             I am{" "}
-            <span className="text-mypurple font-extrabold ">
-              {" "}
+            <span
+              className="text-mypurple font-extrabold "
+              style={{ color: `${currentColor}` }}
+            >
               Syed Farazuddin
             </span>
           </h1>

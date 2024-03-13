@@ -5,7 +5,7 @@ import reactCer from "../assets/react-certificate.png";
 import CSS from "../assets/CSS-JS.png";
 import suven from "../assets/intern-suven.png";
 function Certificates() {
-  const { darkMode } = useContext(GlobalContext);
+  const { darkMode, currentColor } = useContext(GlobalContext);
   return (
     <div
       id="Certificates"
@@ -15,6 +15,7 @@ function Certificates() {
         className={`${
           darkMode ? "text-zinc-100" : "text-dark "
         } lg:text-4xl text-center  font-extrabold font-serif mb-10 mobile:text-3xl`}
+        style={{ color: `${currentColor}` }}
       >
         Certificates
       </h1>

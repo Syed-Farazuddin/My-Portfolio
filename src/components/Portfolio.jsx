@@ -229,7 +229,7 @@ function Portfolio() {
             >
               <FaChevronLeft />
             </p>
-            <a href="https://syed-farazuddin.github.io/Food-Recipies/">
+            <a href="https://movix-movieinfo.web.app/">
               <img
                 className="w-full h-full  rounded-lg "
                 src={project4[idx4]}

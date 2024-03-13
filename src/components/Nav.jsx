@@ -7,13 +7,13 @@ function Nav() {
   return (
     <div
       className={`${
-        darkMode ? " bg-sdark " : "bg-slight"
-      } mobile:w-full flex sm:px-6 sm:py-4 justify-between items-center z-40 font-display mobile:px-4 mobile:py-2`}
+        darkMode ? " bg-slate-900 " : "bg-mlight"
+      } mobile:w-full flex sm:px-6 sm:py-4 justify-between items-center z-40 font-display mobile:px-4 mobile:py-2 fixed`}
     >
       <h1
         className={`${
-          darkMode ? "  text-white " : "text-textlight"
-        } sm:text-2xl mobile:text-lg lg:text-4xl font-bold lmobile:text-xl`}
+          darkMode ? "  text-mypurple " : ""
+        }text-mypurple sm:text-2xl mobile:text-lg lg:text-4xl font-bold lmobile:text-xl`}
       >
         Syed Farazuddin
       </h1>

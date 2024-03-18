@@ -27,19 +27,44 @@ function Nav() {
             : " mobile:hidden"
         } justify-center items-center sm:gap-5 lg:gap-10 sm:flex font-semibold `}
       >
-        <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
+        <li
+          className="hover:text-mypurple sm:text-lg cursor-pointer"
+          onClick={() => {
+            setOpenMenu((prev) => !prev);
+          }}
+        >
           <a href="#Education">Education</a>
         </li>
-        <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
+        <li
+          className="hover:text-mypurple  sm:text-lg cursor-pointer"
+          onClick={() => {
+            setOpenMenu((prev) => !prev);
+          }}
+        >
           <a href="#Skills">Skills</a>
         </li>
-        <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
+        <li
+          className="hover:text-mypurple  sm:text-lg cursor-pointer"
+          onClick={() => {
+            setOpenMenu((prev) => !prev);
+          }}
+        >
           <a href="#Portfolio">Portfolio</a>
         </li>
-        <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
+        <li
+          className="hover:text-mypurple  sm:text-lg cursor-pointer"
+          onClick={() => {
+            setOpenMenu((prev) => !prev);
+          }}
+        >
           <a href="#Certificates">Certificates</a>
         </li>
-        <li className="hover:text-mypurple  sm:text-lg cursor-pointer">
+        <li
+          className="hover:text-mypurple  sm:text-lg cursor-pointer"
+          onClick={() => {
+            setOpenMenu((prev) => !prev);
+          }}
+        >
           <a href="#Contact">Contact</a>
         </li>
       </ul>

@@ -12,7 +12,7 @@ import movix4 from "../assets/movix4.png";
 import movix5 from "../assets/movix5.png";
 import movix6 from "../assets/movix6.png";
 import movix7 from "../assets/movix7.png";
-
+import Devlabs from "../assets/DevLabs.png";
 import project2Image2 from "../assets/p2.png";
 import project2Image1 from "../assets/p2-1.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -33,11 +33,13 @@ function Portfolio() {
     movix6,
     movix7,
   ];
+  const project5 = [Devlabs];
 
   const [idx, setIdx] = useState(0);
   const [idx2, setIdx2] = useState(0);
   const [idx3, setIdx3] = useState(0);
   const [idx4, setIdx4] = useState(0);
+  const [idx5, setIdx5] = useState(0);
 
   const { darkMode, currentColor } = useContext(GlobalContext);
   return (
@@ -54,8 +56,60 @@ function Portfolio() {
         Portfolio
       </h1>
       <div className="flex w-full mobile:flex-col-reverse lg:flex-row mt-10">
+        {/* Project 1*/}
+
         <div className="grid lg:grid-cols-2 gap-10 mobile:grid-cols-1">
-          {/* Project 1 */}
+          <div
+            className={`${
+              darkMode ? "bg-customblue text-white" : "bg-slight"
+            } mobile:p-2 flex justify-center items-center relative md:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+          >
+            <h1
+              className={`${
+                darkMode ? " text-white " : "text-dark"
+              } font-bold font-serif`}
+            >
+              DevLabs
+            </h1>
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
+              onClick={() => {
+                if (idx5 === project5.length - 1) {
+                  setIdx5(0);
+                  console.log("idx is ", project5.length - 1);
+                } else {
+                  setIdx5((prev) => prev + 1);
+                }
+              }}
+            >
+              <FaChevronLeft />
+            </p>
+            <a href="https://github.com/Syed-Farazuddin/Dev-Labs.git">
+              <img
+                className="w-full h-full  rounded-lg "
+                src={project5[idx]}
+                alt=""
+              />
+            </a>
+
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
+              onClick={() => {
+                if (idx5 === project5.length - 1) {
+                  setIdx(0);
+                } else {
+                  setIdx(idx5 + 1);
+                }
+              }}
+            >
+              <FaChevronRight />
+            </p>
+          </div>
+          {/* Project 2 */}
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"
@@ -106,7 +160,7 @@ function Portfolio() {
               <FaChevronRight />
             </p>
           </div>
-          {/* Project 2 */}
+          {/* Project 3*/}
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"
@@ -155,7 +209,7 @@ function Portfolio() {
             </p>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 4 */}
           {/* https://syed-farazuddin.github.io/MERN_WeatherApp/ */}
           <div
             className={`${
@@ -203,7 +257,7 @@ function Portfolio() {
               <FaChevronRight />
             </p>
           </div>
-          {/* Project 4 */}
+          {/* Project 5 */}
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"

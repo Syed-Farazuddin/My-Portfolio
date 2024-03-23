@@ -6,7 +6,6 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
   const { darkMode, currentColor } = useContext(GlobalContext);
-  console.log(currentColor);
   return (
     <div
       className={`${
@@ -23,7 +22,7 @@ function Nav() {
       <ul
         className={`${
           openMenu
-            ? "bg-dark text-white font-serif h-[100vh] left-0 flex flex-col py-5 absolute top-12 right-0 gap-10"
+            ? "bg-dark text-white font-serif h-[100vh] left-0 flex flex-col py-5 absolute top-12 right-0 gap-10 transition-all ease-linear "
             : " mobile:hidden"
         } justify-center items-center sm:gap-5 lg:gap-10 sm:flex font-semibold `}
       >

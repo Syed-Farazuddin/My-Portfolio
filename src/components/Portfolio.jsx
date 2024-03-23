@@ -13,6 +13,8 @@ import movix5 from "../assets/movix5.png";
 import movix6 from "../assets/movix6.png";
 import movix7 from "../assets/movix7.png";
 import Devlabs from "../assets/DevLabs.png";
+import Devlabs1 from "../assets/devlabs1.png";
+import Devlabs2 from "../assets/devlabs2.png";
 import project2Image2 from "../assets/p2.png";
 import project2Image1 from "../assets/p2-1.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -33,7 +35,7 @@ function Portfolio() {
     movix6,
     movix7,
   ];
-  const project5 = [Devlabs];
+  const project5 = [Devlabs, Devlabs1, Devlabs2];
 
   const [idx, setIdx] = useState(0);
   const [idx2, setIdx2] = useState(0);
@@ -78,7 +80,6 @@ function Portfolio() {
               onClick={() => {
                 if (idx5 === project5.length - 1) {
                   setIdx5(0);
-                  console.log("idx is ", project5.length - 1);
                 } else {
                   setIdx5((prev) => prev + 1);
                 }
@@ -89,7 +90,7 @@ function Portfolio() {
             <a href="https://github.com/Syed-Farazuddin/Dev-Labs.git">
               <img
                 className="w-full h-full  rounded-lg "
-                src={project5[idx]}
+                src={project5[idx5]}
                 alt=""
               />
             </a>
@@ -100,108 +101,9 @@ function Portfolio() {
               } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
               onClick={() => {
                 if (idx5 === project5.length - 1) {
-                  setIdx(0);
+                  setIdx5(0);
                 } else {
-                  setIdx(idx5 + 1);
-                }
-              }}
-            >
-              <FaChevronRight />
-            </p>
-          </div>
-          {/* Project 2 */}
-          <div
-            className={`${
-              darkMode ? "bg-customblue text-white" : "bg-slight"
-            } mobile:p-2 flex justify-center items-center relative md:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
-          >
-            <h1
-              className={`${
-                darkMode ? " text-white " : "text-dark"
-              } font-bold font-serif`}
-            >
-              Food Recipie app
-            </h1>
-            <p
-              className={`${
-                darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
-              onClick={() => {
-                if (idx === project1.length - 1) {
-                  setIdx(0);
-                  console.log("idx is ", project1.length - 1);
-                } else {
-                  setIdx((prev) => prev + 1);
-                }
-              }}
-            >
-              <FaChevronLeft />
-            </p>
-            <a href="https://syed-farazuddin.github.io/Food-Recipies/">
-              <img
-                className="w-full h-full  rounded-lg "
-                src={project1[idx]}
-                alt=""
-              />
-            </a>
-
-            <p
-              className={`${
-                darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
-              onClick={() => {
-                if (idx === project1.length - 1) {
-                  setIdx(0);
-                } else {
-                  setIdx(idx + 1);
-                }
-              }}
-            >
-              <FaChevronRight />
-            </p>
-          </div>
-          {/* Project 3*/}
-          <div
-            className={`${
-              darkMode ? "bg-customblue text-white" : "bg-slight"
-            } flex justify-center items-center relative mobile:p-2 lg:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
-          >
-            <h1 className="text-white font-bold font-serif">
-              To-Do Application
-            </h1>
-            <p
-              className={`${
-                darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
-              onClick={() => {
-                console.log(idx);
-                if (idx2 === project2.length - 1) {
-                  setIdx2(0);
-                } else {
-                  setIdx2((prev) => prev + 1);
-                }
-              }}
-            >
-              {" "}
-              <FaChevronLeft />
-            </p>
-            <a href="https://syed-farazuddin.github.io/react-tasky/">
-              <img
-                className="w-full h-full rounded-lg"
-                src={project2[idx2]}
-                alt=""
-              />
-            </a>
-
-            <p
-              className={`${
-                darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
-              onClick={() => {
-                if (idx2 === project2.length - 1) {
-                  setIdx2(0);
-                } else {
-                  setIdx2(idx2 + 1);
+                  setIdx5((prev) => prev + 1);
                 }
               }}
             >
@@ -209,55 +111,7 @@ function Portfolio() {
             </p>
           </div>
 
-          {/* Project 4 */}
-          {/* https://syed-farazuddin.github.io/MERN_WeatherApp/ */}
-          <div
-            className={`${
-              darkMode ? "bg-customblue text-white" : "bg-slight"
-            } flex justify-center items-center relative mobile:p-2 lg:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
-          >
-            <h1 className="text-white font-bold font-serif">
-              Weather Application
-            </h1>
-            <p
-              className={`${
-                darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
-              onClick={() => {
-                if (idx3 === project3.length - 1) {
-                  setIdx3(0);
-                } else {
-                  setIdx3((prev) => prev + 1);
-                }
-              }}
-            >
-              {" "}
-              <FaChevronLeft />
-            </p>
-            <a href="https://syed-farazuddin.github.io/MERN_WeatherApp/">
-              <img
-                className="w-full h-full  rounded-lg"
-                src={project3[idx3]}
-                alt=""
-              />
-            </a>
-
-            <p
-              className={`${
-                darkMode ? "bg-dark text-white" : "bg-white text-black"
-              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
-              onClick={() => {
-                if (idx3 === project3.length - 1) {
-                  setIdx3(0);
-                } else {
-                  setIdx3(idx3 + 1);
-                }
-              }}
-            >
-              <FaChevronRight />
-            </p>
-          </div>
-          {/* Project 5 */}
+          {/* Project 2*/}
           <div
             className={`${
               darkMode ? "bg-customblue text-white" : "bg-slight"
@@ -301,6 +155,152 @@ function Portfolio() {
                   setIdx4(0);
                 } else {
                   setIdx4(idx4 + 1);
+                }
+              }}
+            >
+              <FaChevronRight />
+            </p>
+          </div>
+          {/* Project 3 */}
+          <div
+            className={`${
+              darkMode ? "bg-customblue text-white" : "bg-slight"
+            } mobile:p-2 flex justify-center items-center relative md:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+          >
+            <h1
+              className={`${
+                darkMode ? " text-white " : "text-dark"
+              } font-bold font-serif`}
+            >
+              Food Recipie app
+            </h1>
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
+              onClick={() => {
+                if (idx === project1.length - 1) {
+                  setIdx(0);
+                } else {
+                  setIdx((prev) => prev + 1);
+                }
+              }}
+            >
+              <FaChevronLeft />
+            </p>
+            <a href="https://syed-farazuddin.github.io/Food-Recipies/">
+              <img
+                className="w-full h-full  rounded-lg "
+                src={project1[idx]}
+                alt=""
+              />
+            </a>
+
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
+              onClick={() => {
+                if (idx === project1.length - 1) {
+                  setIdx(0);
+                } else {
+                  setIdx(idx + 1);
+                }
+              }}
+            >
+              <FaChevronRight />
+            </p>
+          </div>
+          {/* Project 4*/}
+          <div
+            className={`${
+              darkMode ? "bg-customblue text-white" : "bg-slight"
+            } flex justify-center items-center relative mobile:p-2 lg:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+          >
+            <h1 className="text-white font-bold font-serif">
+              To-Do Application
+            </h1>
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
+              onClick={() => {
+                if (idx2 === project2.length - 1) {
+                  setIdx2(0);
+                } else {
+                  setIdx2((prev) => prev + 1);
+                }
+              }}
+            >
+              {" "}
+              <FaChevronLeft />
+            </p>
+            <a href="https://syed-farazuddin.github.io/react-tasky/">
+              <img
+                className="w-full h-full rounded-lg"
+                src={project2[idx2]}
+                alt=""
+              />
+            </a>
+
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
+              onClick={() => {
+                if (idx2 === project2.length - 1) {
+                  setIdx2(0);
+                } else {
+                  setIdx2(idx2 + 1);
+                }
+              }}
+            >
+              <FaChevronRight />
+            </p>
+          </div>
+
+          {/* Project 5*/}
+          {/* https://syed-farazuddin.github.io/MERN_WeatherApp/ */}
+          <div
+            className={`${
+              darkMode ? "bg-customblue text-white" : "bg-slight"
+            } flex justify-center items-center relative mobile:p-2 lg:p-5 shadow-lg bg-customblue hover:shadow-2xl rounded-lg flex-col gap-1`}
+          >
+            <h1 className="text-white font-bold font-serif">
+              Weather Application
+            </h1>
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -left-2 cursor-pointer`}
+              onClick={() => {
+                if (idx3 === project3.length - 1) {
+                  setIdx3(0);
+                } else {
+                  setIdx3((prev) => prev + 1);
+                }
+              }}
+            >
+              {" "}
+              <FaChevronLeft />
+            </p>
+            <a href="https://syed-farazuddin.github.io/MERN_WeatherApp/">
+              <img
+                className="w-full h-full  rounded-lg"
+                src={project3[idx3]}
+                alt=""
+              />
+            </a>
+
+            <p
+              className={`${
+                darkMode ? "bg-dark text-white" : "bg-white text-black"
+              } mobile:p-1 lg:p-2 rounded-full absolute -right-2 cursor-pointer`}
+              onClick={() => {
+                if (idx3 === project3.length - 1) {
+                  setIdx3(0);
+                } else {
+                  setIdx3(idx3 + 1);
                 }
               }}
             >

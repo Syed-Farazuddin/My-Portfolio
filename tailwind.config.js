@@ -25,6 +25,16 @@ module.exports = {
         display: ["Oswald"],
         body: ['"Open Sans"'],
       },
+      // keyframes: {
+      //   moveNavbar: {
+      //     "0%": {
+      //       transform: "translateX(-100px)",
+      //     },
+      //     "100%": {
+      //       transform: "translateX(0px)",
+      //     },
+      //   },
+      // },
     },
   },
   plugins: [],

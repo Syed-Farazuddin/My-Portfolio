@@ -9,7 +9,7 @@ function About() {
       className={`flex mobile:w-full lg:max-w-6xl flex-col ${
         darkMode ? "bg-dark " : "bg-light "
       } mobile:p-5 md:p-10 h-[100vh] font-sans mt-5 flex justify-center items-center flex-col mb-20`}
-      id="Skills"
+      id="About"
     >
       <h1
         className={`${

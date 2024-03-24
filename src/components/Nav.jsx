@@ -29,7 +29,15 @@ function Nav() {
         <li
           className="hover:text-mypurple sm:text-lg cursor-pointer"
           onClick={() => {
-            setOpenMenu((prev) => !prev);
+            setOpenMenu(false);
+          }}
+        >
+          <a href="#About">About</a>
+        </li>
+        <li
+          className="hover:text-mypurple sm:text-lg cursor-pointer"
+          onClick={() => {
+            setOpenMenu(false);
           }}
         >
           <a href="#Education">Education</a>
@@ -37,7 +45,7 @@ function Nav() {
         <li
           className="hover:text-mypurple  sm:text-lg cursor-pointer"
           onClick={() => {
-            setOpenMenu((prev) => !prev);
+            setOpenMenu(false);
           }}
         >
           <a href="#Skills">Skills</a>
@@ -45,7 +53,7 @@ function Nav() {
         <li
           className="hover:text-mypurple  sm:text-lg cursor-pointer"
           onClick={() => {
-            setOpenMenu((prev) => !prev);
+            setOpenMenu(false);
           }}
         >
           <a href="#Portfolio">Portfolio</a>
@@ -53,7 +61,7 @@ function Nav() {
         <li
           className="hover:text-mypurple  sm:text-lg cursor-pointer"
           onClick={() => {
-            setOpenMenu((prev) => !prev);
+            setOpenMenu(false);
           }}
         >
           <a href="#Certificates">Certificates</a>
@@ -61,7 +69,7 @@ function Nav() {
         <li
           className="hover:text-mypurple  sm:text-lg cursor-pointer"
           onClick={() => {
-            setOpenMenu((prev) => !prev);
+            setOpenMenu(false);
           }}
         >
           <a href="#Contact">Contact</a>
